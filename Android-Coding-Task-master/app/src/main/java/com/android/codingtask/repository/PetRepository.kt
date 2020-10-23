@@ -17,7 +17,7 @@ class PetRepository(private val okHttpClient: OkHttpClient) {
         val settings = MutableLiveData<Resource<Settings>>()
 
         val request: Request = Request.Builder()
-            .url("https://raw.githubusercontent.com/JKKhanpara/Android-Coding-Task/master/responses/settings.json")
+            .url("https://raw.githubusercontent.com/garg8rahul/Android-Task/master/Android-Coding-Task-master/responses/settings.json")
             .build()
 
         settings.value = Resource.loading(null)
@@ -54,7 +54,7 @@ class PetRepository(private val okHttpClient: OkHttpClient) {
         val pets = MutableLiveData<Resource<List<Pet>>>()
 
         val request: Request = Request.Builder()
-            .url("https://raw.githubusercontent.com/JKKhanpara/Android-Coding-Task/master/responses/pets.json")
+            .url("https://raw.githubusercontent.com/garg8rahul/Android-Task/master/Android-Coding-Task-master/responses/pets.json")
             .build()
 
         pets.value = Resource.loading(null)
